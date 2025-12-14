@@ -1,0 +1,164 @@
+{
+    "evaluation_metadata": {
+        "evaluation_timestamp": "2025-12-12T13:27:55.667930",
+        "chat_id": 78128,
+        "user_id": 77096,
+        "turn_number": 10,
+        "evaluator_version": "1.0"
+    },
+    "query_response_summary": {
+        "user_query": "Do you have an idea how much thier rooms cost per night?",
+        "ai_response": "For Gopal Mansion, an air-conditioned room with TV and bath is Rs 800 per night. **We also offer specially subsidized air-conditioned rooms at our clinic for Rs 2000 (US $50) per night, and non-AC rooms for Rs 1500 (US$ 40) per night, including free breakfast.** Happy Home Hotel, which is a 5-minute walk from our clinic, offers single rooms for Rs 1400 and double rooms for Rs 2000. To discuss your specific needs and coordinate your visit, you can [book a consultation call](https://pages.razorpay.com/ivfconsultation) with Dr. Malpani.",
+        "response_length": 539,
+        "turn_id": 14
+    },
+    "1_response_relevance_and_completeness": {
+        "overall_score": 0.7,
+        "grounding_score": 0.69,
+        "grounding_interpretation": "Medium (0.4-0.7)",
+        "completeness_analysis": {
+            "completeness_score": 0.72,
+            "is_substantive": true,
+            "has_specific_details": true,
+            "keyword_coverage": 0.3,
+            "question_type": "do",
+            "assessment": "Complete"
+        },
+        "context_utilization": {
+            "total_context_sources": 3,
+            "sources_used": 3,
+            "context_coverage_ratio": 0.111,
+            "context_sources_detail": [
+                {
+                    "id": 28960,
+                    "source_url": "https://www.drmalpani.com/hotels",
+                    "text_length": 1438,
+                    "tokens": 403
+                },
+                {
+                    "id": 27025,
+                    "source_url": "https://www.drmalpani.com/hotels",
+                    "text_length": 2209,
+                    "tokens": 542
+                },
+                {
+                    "id": 37548,
+                    "source_url": "https://www.drmalpani.com/travel",
+                    "text_length": 2221,
+                    "tokens": 608
+                }
+            ]
+        },
+        "citations": {
+            "count": 1,
+            "urls": [
+                "https://pages.razorpay.com/ivfconsultation"
+            ]
+        },
+        "response_characteristics": {
+            "length_chars": 539,
+            "length_words": 86,
+            "has_urls": true,
+            "has_numbers": true
+        }
+    },
+    "2_hallucination_and_factual_accuracy": {
+        "hallucination_risk_score": 0.8,
+        "risk_level": "High (>0.3)",
+        "factual_accuracy_score": 0.2,
+        "claim_analysis": {
+            "total_claims_extracted": 5,
+            "supported_claims": 1,
+            "unsupported_claims": 4,
+            "average_claim_confidence": 0.419,
+            "claim_details": [
+                {
+                    "supported": true,
+                    "confidence": 0.73,
+                    "overlap_ratio": 0.909,
+                    "phrase_match_ratio": 0.462,
+                    "claim": "For Gopal Mansion, an air-conditioned room with TV and bath is Rs 800 per night",
+                    "verification_method": "numerical_fact_check"
+                },
+                {
+                    "supported": false,
+                    "confidence": 0.0,
+                    "overlap_ratio": 0.0,
+                    "claim": "**We also offer specially subsidized air-conditioned rooms at our clinic for Rs 2000 (US $50) per ni...",
+                    "reason": "Specific numerical facts not found in context"
+                },
+                {
+                    "supported": false,
+                    "confidence": 0.532,
+                    "overlap_ratio": 0.857,
+                    "phrase_match_ratio": 0.045,
+                    "claim": "** Happy Home Hotel, which is a 5-minute walk from our clinic, offers single rooms for Rs 1400 and d...",
+                    "verification_method": "numerical_fact_check"
+                },
+                {
+                    "supported": false,
+                    "confidence": 0.5,
+                    "overlap_ratio": 0.5,
+                    "phrase_match_ratio": 0.0,
+                    "claim": "To discuss your specific needs and coordinate your visit, you can [book a consultation call](https:/...",
+                    "verification_method": "semantic_matching"
+                },
+                {
+                    "supported": false,
+                    "confidence": 0.333,
+                    "overlap_ratio": 0.333,
+                    "phrase_match_ratio": 0.0,
+                    "claim": "com/ivfconsultation) with Dr",
+                    "verification_method": "semantic_matching"
+                }
+            ]
+        },
+        "grounding_check": {
+            "is_grounded": true,
+            "grounding_score": 0.69,
+            "interpretation": "Response is well-grounded in provided context"
+        },
+        "ground_truth_validation": {
+            "manual_evaluation_available": true,
+            "manual_evaluation_note": "Hallucination/Factual Error: The bolded section regarding 'subsidized rooms at our clinic' is explicitly noted as incorrect in the review data (see below).",
+            "known_hallucination_detected": true
+        }
+    },
+    "3_latency_and_costs": {
+        "latency_analysis": {
+            "latency_seconds": 9.0,
+            "latency_milliseconds": 9000.0,
+            "latency_category": "Slow (5-10s)",
+            "user_query_timestamp": "2025-11-16T20:42:07.000000Z",
+            "ai_response_timestamp": "2025-11-16T20:42:16.000000Z"
+        },
+        "cost_analysis": {
+            "total_cost_usd": 0.045985,
+            "cost_breakdown": {
+                "input_cost_usd": 0.043975,
+                "output_cost_usd": 0.00201
+            },
+            "token_usage": {
+                "total_tokens": 8929,
+                "input_tokens": 8795,
+                "output_tokens": 134,
+                "input_percentage": 98.5,
+                "output_percentage": 1.5
+            },
+            "pricing_model": {
+                "input_token_price_per_1m": "$5.0",
+                "output_token_price_per_1m": "$15.0"
+            },
+            "efficiency_metrics": {
+                "cost_per_word": 0.000535,
+                "tokens_per_word": 1.56
+            }
+        }
+    },
+    "overall_assessment": {
+        "quality_score": 0.45,
+        "performance_score": "MODERATE",
+        "cost_efficiency": "EXPENSIVE",
+        "recommendation": "Action recommended: High hallucination risk detected - verify factual accuracy"
+    }
+}
